@@ -1,0 +1,306 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    background-color: #333;
+    padding: 10px 0px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .brand{
+    font-size: 32px;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    position: relative;
+    margin: 0 10px;
+}
+nav li a{
+    display: block;
+    color: white;
+    margin: 0px 5px;
+    padding: 5px;
+    min-width: 70px;
+}
+
+#search{
+    width: 100%;
+    height: 40px;
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    font-size: 15px; 
+}
+
+#userinfo{
+    display: none;
+    align-items: center;
+}
+.carts-product{
+    position: absolute;
+    width: 200px;
+    background-color: #ddd;
+    border: 1px solid greenyellow;
+    padding: 10px;
+    transform: translate(-40%,0);
+    top: 39px;
+    text-align: center;
+    display: none;
+}
+.carts-product a{
+    width: 100px;
+    background-color: blue;
+    margin:5px 0 0 40px;
+    border-radius: 10%;
+    padding: 5px;
+    
+}
+ .fas{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.badge{
+    width: 20px;
+    height: 20px;
+    background-color: maroon;
+    color: snow;
+    text-align: center;
+    display: block;
+    position:absolute;
+    border-radius: 50%;
+    top: -10px;
+    right: -15px;
+    display: none;
+}
+/* ************form************* */
+
+.section-form{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: blueviolet;
+}
+
+.section-form form input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #999;
+    margin: 10px 0;
+    display: block;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.section-form form input[type="submit"]{
+    background-color:blue;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+}
+
+.section-form form input[type="submit"]:hover{
+    background-color: skyblue;
+    color: black;
+}
+
+/* products */
+
+.products{
+    width: 65%;
+    float: left;
+    margin: 10px 0;
+}
+
+/* $$$$$$$$$$$$$products filter$$$$$$$$$$$$$ */
+.products-filter{
+    float: right;
+    width: 30%;
+    margin: 10px 0;
+}
+
+#name-filter{
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.product-item-des h2{
+    cursor: pointer;
+}
+.product-item{
+    display: flex;
+    width: 100%;
+    border: solid 1px #ddd;
+    margin-bottom: 20px;
+}
+
+.product-item-img{
+    width: 30%;
+    height: 175px;
+    margin-right: 10px;
+}
+.product-item-actions{
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.add-to-cart{
+    display: block;
+    margin-left: auto;
+    background-color:darkblue;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-item-actions i{
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    font-size: 20px;
+    margin-left: auto;
+
+}
+
+/* Cart */
+
+.home-page{
+    margin: 50px;
+}
+
+.item-details img{
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid gray;
+    padding: 2px;
+}
+
+/* $$$$$$$$$$$$Create Product$$$$$$$$$$$$$$$ */
+.create-product{
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    bottom: 20px;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 75px;
+}
+.create-product:hover{
+    background-color:skyblue;
+    color: #333;
+}
+
+.edit-product{
+    display: block;
+    width: 150px;
+    margin-top: 10px;
+    background-color:darkblue;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* $$$$$$$$$$$$$ Profile Page $$$$$$$$$$$$ */
+
+#profile-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+#user-name{
+    margin: 10px 0;
+    text-transform: uppercase;
+    
+}
+#email , #product-length{
+    margin: 10px 0;
+}
+#btn{
+    display: block;
+    width: 150px;
+    text-align: center;
+    background-color:darkblue;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* editprofile */
+
+#edit-profile input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #999;
+    margin: 10px 0;
+    display: block;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+#edit-profile input[type="submit"]{
+    background-color:blue;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+}
+
+#edit-profile input[type="submit"]:hover{
+    background-color: skyblue;
+    color: black;
+}
+
+.love{
+    background-color: red;
+}

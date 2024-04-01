@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <title>Shopping Cart | Home Page</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+        <!-- <i class="fa-regular fa-heart"></i> -->
+        <header>
+        <div class="container">
+            <div class="header-content">
+                    <a href="index.html" class="brand"> Shopping Cart </a>
+        
+                    <nav>
+                        <ul id="links">
+                        <li><a href="login.html">Sign in</a></li>
+                        <li><a href="register.html">Sign up</a></li>
+                        </ul>
+                        <ul id="userinfo">
+                            <li><a href="profile.html" id="user"></a></li>
+                            <li><a href="favourite.html">Favourites</a></li>
+                            <li><a href="myProducts.html">My Products</a></li>
+                            <li class="shopping-cart-menu">
+                                <i class="fas fa-shopping-cart"></i>
+                            <span class="badge"></span>
+
+                            <div class="carts-product">
+                                <div></div>
+                                <a href="cart.html">More</a>
+                            </div>
+                            </li>
+                            <li><a href="#" id="logout">Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="home">
+            <div class="container">
+                <input type="text" id="search" placeholder="Search By Name">
+                <div class="products"></div>
+                <div class="products-filter">
+                    <h2>Filter By Name:</h2>
+                    <select  id="name-filter">
+                        <option value="" hidden>Filter By Name</option>
+                        <option value="all">All</option>
+                        <option value="iphone">iphone</option>
+                        <option value="oppo">oppo</option>
+                        <option value="realme">realme</option>
+                        <option value="xioame">xioame</option>
+                        <option value="samsung">samsung</option>
+                        <option value="poco">poco</option>
+                        <option value="redmagic">redmagic</option>
+                        <option value="infinix">infinix</option>
+                    </select>
+                </div>
+            </div>
+
+            <a href="createProduct.html" class="create-product"><i class="fa fa-plus"></i></a>
+        </section>
+
+        <script src="JQuery File/jquery-3.7.1.min.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/cartMenu.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
